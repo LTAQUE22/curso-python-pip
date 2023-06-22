@@ -1,2 +1,5 @@
-# curso-python-pip
-# curso-python-pip
+# Game Proyect 
+´´´ Python
+cd game
+python3 main.py
+´´´
