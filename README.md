@@ -6,3 +6,14 @@ Para correr el juego debes seguir las instrucciones en el terminal:
 cd game
 python3 main.py
 ```
+
+# App Proyect
+
+``` SH
+git clone 
+cd app
+source source env_app/bin/activate 
+pip3 install -r requeriments.txt
+python3 main.py
+```
+
