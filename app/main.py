@@ -8,17 +8,25 @@ Created on Wed May 31 08:45:50 2023
 import utils
 import leer_archivos_csv
 import charts
+import pandas as pd
 
 
 
 def run():
+    '''
     data=leer_archivos_csv.read_csv('./data.csv')
     data=list(filter(lambda item: item['Continent']=='North America', data))
 
     country=list(map(lambda x: x['Country/Territory'] , data))
     porcentajes=list(map(lambda x: x['World Population Percentage'] , data))
     charts.generate_pie_chart(country, porcentajes)
-    
+    '''
+    df=pd.read_csv('./data.csv')
+    df=df[df['Continent']=='Africa']
+    country=df['Country/Territory'].values
+    porcentajes=df['World Population Percentage'].values
+    charts.generate_pie_chart(country, porcentajes)
+    data=leer_archivos_csv.read_csv('./data.csv')
     pais=input('Ingrese el Nombre del Pais:')
 
     result=utils.population_by_country(data, pais)
