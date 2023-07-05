@@ -2,7 +2,7 @@
 """
 Created on Wed May 31 08:43:06 2023
 
-@author: paola
+@author: luist
 """
 def  get_population(pais_dict):
     population_dict={

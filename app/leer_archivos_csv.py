@@ -2,7 +2,7 @@
 """
 Created on Thu Jun  1 14:58:29 2023
 
-@author: paola
+@author: luist
 """
 
 import csv
